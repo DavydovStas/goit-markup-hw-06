@@ -58,7 +58,7 @@
     <!-- Секция Герой -->
     <section class="hero">
       <h1 class="title">эффективные решения<br />для вашего бизнеса</h1>
-      <a href="#" class="link">Заказать услугу</a>
+      <a class="button-link" data-modal-open>Заказать услугу</a>
     </section>
 
     <!-- Секция Преимуществ компании -->
@@ -458,5 +458,66 @@
       </div>
       <p class="developed-by">2020 | Developed by GoIT Students</p>
     </footer>
+
+    <!-- Модалка -->
+    <div class="modal is-hidden" data-modal>
+      <form action="" class="feedback-form" autocomplete="off">
+        <b class="title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="form-field">
+          <input type="text" name="name" id="name" />
+          <svg class="form-icon">
+            <use href="./images/svg-image/symbol-defs.svg#icon-person"></use>
+          </svg>
+          <label for="name">Имя</label>
+        </div>
+        <div class="form-field">
+          <input type="tel" name="tel" id="tel" />
+          <svg class="form-icon">
+            <use href="./images/svg-image/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <label for="tel">Телефон</label>
+        </div>
+        <div class="form-field">
+          <input type="email" name="mail" id="mail" />
+          <svg class="form-icon">
+            <use href="./images/svg-image/symbol-defs.svg#icon-email"></use>
+          </svg>
+          <label for="mail"> Почта</label>
+        </div>
+        <div class="form-field">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Комментарий"
+          ></textarea>
+        </div>
+        <div class="chek-field">
+          <input type="checkbox" name="" id="" />
+          <svg class="chek-icon">
+            <use
+              href="./images/svg-image/symbol-defs.svg#icon-full-check"
+            ></use>
+          </svg>
+          <label for="">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#">Условия договора</a>
+          </label>
+        </div>
+        <a class="button-link form">
+          Отправить
+        </a>
+        <div class="button-close">
+          <button class="box" data-modal-close>
+            <svg class="image-close">
+              <use href="./images/svg-image/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
